@@ -1,0 +1,46 @@
+Certainly! Here are the Java and Python implementations for a simple Netflix login page. Please note that this is a basic example and does not include actual authentication or security measures.
+
+Java:
+import java.util.Scanner;
+
+public class NetflixLogin {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter your username: ");
+        String username = scanner.nextLine();
+        
+        System.out.print("Enter your password: ");
+        String password = scanner.nextLine();
+        
+        if (username.equals("example_user") && password.equals("example_password")) {
+            System.out.println("Login successful");
+        } else {
+            System.out.println("Login failed");
+        }
+    }
+}
+
+
+Python:
+username = input("Enter your username: ")
+password = input("Enter your password: ")
+
+if username == "example_user" and password == "example_password":
+    print("Login successful")
+else:
+    print("Login failed")
+
+
+To run the Java code, save it to a file named NetflixLogin.java, then compile and run it using the following commands in the terminal:
+
+javac NetflixLogin.java
+java NetflixLogin
+
+
+For the Python code, save it to a file named netflix_login.py and run it using the following command in the terminal:
+
+python netflix_login.py
+
+
+When you run the code, you will be prompted to enter your username and password, and the program will display "Login successful" if the credentials match, otherwise it will display "Login failed".
